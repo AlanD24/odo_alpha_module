@@ -1,0 +1,73 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="alpha.users_list">
+      <field name="name">alpha users list</field>
+      <field name="model">alpha.user</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="first_lastname"/>
+          <field name="second_lastname"/>
+          <field name="phone"/>
+          <field name="age"/>
+          <field name="gender"/>
+          <field name="groups"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="alpha.groups_list">
+      <field name="name">alpha groups list</field>
+      <field name="model">alpha.group</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="group_id"/>
+          <field name="sport"/>
+          <field name="schedule"/>
+          <field name="campus"/>
+          <field name="users"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="alpha.action_user">
+      <field name="name">Lista de usuarios</field>
+      <field name="res_model">alpha.user</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="alpha.action_group">
+      <field name="name">Lista de grupos</field>
+      <field name="res_model">alpha.group</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="alpha.action_server">
+      <field name="name">alpha server</field>
+      <field name="model_id" ref="model_alpha_alpha"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+    <menuitem name="Club Alpha" id="alpha.menu_root"/>
+
+    <!-- menu categories -->
+    <menuitem name="Opciones" id="alpha.options" parent="alpha.menu_root"/>
+
+    <!-- actions -->
+    <menuitem name="Usuarios" id="alpha.menu_users" parent="alpha.options" action="alpha.action_user"/>
+    <menuitem name="Grupos" id="alpha.menu_groups" parent="alpha.options" action="alpha.action_group"/>
+  </data>
+</odoo>

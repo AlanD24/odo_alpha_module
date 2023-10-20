@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_alpha_user,alpha.user,model_alpha_user,base.group_user,1,1,1,1
+access_alpha_group,alpha.group,model_alpha_group,base.group_user,1,1,1,1
