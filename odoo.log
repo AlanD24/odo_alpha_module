@@ -7637,3 +7637,38 @@ Node: <t t-call-assets="web.assets_frontend" t-js="false"/>
 2023-10-20 16:08:41,078 22216 INFO ? odoo.service.server: Initiating shutdown 
 2023-10-20 16:08:41,078 22216 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2023-10-20 16:08:42,180 22216 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 4 connections  
+2023-10-20 16:08:45,505 24676 INFO ? odoo: Odoo version 16.0-20231019 
+2023-10-20 16:08:45,510 24676 INFO ? odoo: Using configuration file at D:\Program Files\odoo\server\odoo.conf 
+2023-10-20 16:08:45,510 24676 INFO ? odoo: addons paths: ['D:\\Program Files\\odoo\\server\\odoo\\addons', 'd:\\program files\\odoo\\sessions\\addons\\16.0', 'd:\\program files\\odoo\\server\\custom_module', 'd:\\program files\\odoo\\server\\odoo\\addons'] 
+2023-10-20 16:08:45,510 24676 INFO ? odoo: database: odoo@localhost:5432 
+2023-10-20 16:08:45,675 24676 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at D:\Program Files\odoo\thirdparty\wkhtmltopdf.exe 
+2023-10-20 16:08:45,895 24676 INFO ? odoo.service.server: HTTP service (werkzeug) running on MSI.lan:8069 
+2023-10-20 16:08:48,699 24676 INFO prueba odoo.modules.loading: loading 1 modules... 
+2023-10-20 16:08:48,705 24676 INFO prueba odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2023-10-20 16:08:48,709 24676 WARNING prueba odoo.modules.module: Missing `license` key in manifest for 'alpha', defaulting to LGPL-3 
+2023-10-20 16:08:48,713 24676 INFO prueba odoo.modules.loading: loading 9 modules... 
+2023-10-20 16:08:48,781 24676 INFO prueba odoo.modules.loading: 9 modules loaded in 0.07s, 0 queries (+0 extra) 
+2023-10-20 16:08:48,806 24676 INFO prueba odoo.modules.loading: Modules loaded. 
+2023-10-20 16:08:48,808 24676 INFO prueba odoo.modules.registry: Registry loaded in 0.186s 
+2023-10-20 16:08:48,809 24676 INFO prueba odoo.addons.base.models.ir_http: Generating routing map for key None 
+2023-10-20 16:08:49,549 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:49] "GET /web/login HTTP/1.1" 200 - 73 0.056 0.876
+2023-10-20 16:08:50,144 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:50] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.005 0.579
+2023-10-20 16:08:50,899 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:50] "GET /web/webclient/translations/1697818130228 HTTP/1.1" 200 - 9 0.007 0.662
+2023-10-20 16:08:51,220 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:51] "GET /web/webclient/translations/1697818130905 HTTP/1.1" 200 - 6 0.004 0.004
+2023-10-20 16:08:53,939 24676 INFO prueba odoo.addons.base.models.res_users: Login successful for db:prueba login:alan.danjr@gmail.com from 127.0.0.1 
+2023-10-20 16:08:53,950 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:53] "POST /web/login HTTP/1.1" 303 - 41 0.035 0.307
+2023-10-20 16:08:54,814 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:54] "GET /web HTTP/1.1" 200 - 69 0.039 0.821
+2023-10-20 16:08:55,389 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:55] "POST /web/action/load HTTP/1.1" 200 - 10 0.006 0.005
+2023-10-20 16:08:55,423 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:55] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.006 0.006
+2023-10-20 16:08:55,446 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:55] "POST /web/dataset/call_kw/alpha.user/get_views HTTP/1.1" 200 - 30 0.017 0.019
+2023-10-20 16:08:55,643 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:55] "POST /web/dataset/call_kw/alpha.user/web_search_read HTTP/1.1" 200 - 6 0.008 0.008
+2023-10-20 16:08:55,709 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:55] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.004
+2023-10-20 16:08:55,770 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:55] "GET /bus/websocket_worker_bundle?v=1.0.5 HTTP/1.1" 304 - 6 0.003 0.008
+2023-10-20 16:08:56,104 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:56] "GET /websocket HTTP/1.1" 101 - 1 0.001 0.009
+2023-10-20 16:08:56,114 24676 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2023-10-20 16:08:57,712 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:57] "POST /web/action/load HTTP/1.1" 200 - 11 0.007 0.008
+2023-10-20 16:08:58,088 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:58] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 37 0.029 0.034
+2023-10-20 16:08:58,326 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:58] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 42 0.027 0.017
+2023-10-20 16:08:58,434 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:58] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.004 0.006
+2023-10-20 16:08:59,824 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:08:59] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 39 0.011 0.009
+2023-10-20 16:09:00,139 24676 INFO prueba werkzeug: 127.0.0.1 - - [20/Oct/2023 16:09:00] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.010
